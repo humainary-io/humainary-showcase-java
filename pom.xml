@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.humainary.showcase</groupId>
+  <artifactId>humainary-showcase-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>${revision}</version>
+
+  <organization>
+    <name>Humainary</name>
+    <url>https://humainary.io</url>
+  </organization>
+
+  <parent>
+    <groupId>io.humainary</groupId>
+    <artifactId>humainary-modules-parent</artifactId>
+    <version>${revision}</version>
+  </parent>
+
+  <properties>
+    <revision>1.0-alpha9-SNAPSHOT</revision>
+  </properties>
+
+  <modules>
+    <module>observers</module>
+    <module>counters</module>
+  </modules>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>io.humainary.substrates</groupId>
+      <artifactId>humainary-substrates-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.substrates</groupId>
+      <artifactId>substrates-spi-alpha</artifactId>
+      <version>${project.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+
+  </dependencies>
+
+</project>
